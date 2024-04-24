@@ -11,9 +11,9 @@ namespace SebastianLargo_Examen1P.Models
         public int SLDecimal {  get; set; }
 
         [Required]
-        public string SLNombre { get; set; }
+        public string? SLNombre { get; set; }
 
-        [Required]
+        [Required(ErrorMessage ="El caracter debe ser verdadero o falso")]
         public bool SLCaracter {  get; set; }
 
         [Required]
